@@ -1,13 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ch2o73dq1x5ci"]
+[gd_scene load_steps=3 format=3 uid="uid://ch2o73dq1x5ci"]
 
-[ext_resource type="Texture2D" uid="uid://xusux1de3mfy" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://dr4x5y8xdaxvf" path="res://node_2d.gd" id="1_epypp"]
+[ext_resource type="PackedScene" uid="uid://c6sjbpv8hg2g7" path="res://Player.tscn" id="2_q6r6c"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Scena Gry" type="Node2D"]
+script = ExtResource("1_epypp")
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(334, 207)
-texture = ExtResource("1_wtcfe")
+[node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(559, 157)
-texture = ExtResource("1_wtcfe")
+[node name="Player" parent="." instance=ExtResource("2_q6r6c")]
