@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://qnl2q03if8fu"]
+
+[ext_resource type="Texture2D" uid="uid://dlx4d3oab7uwl" path="res://Assets/Textures/rypka.png" id="1_djykc"]
+[ext_resource type="Script" uid="uid://caahhijqm5ci6" path="res://plociski.gd" id="1_w07d2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w07d2"]
+radius = 9.0
+height = 50.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_w07d2")
+speed = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_w07d2")
+
+[node name="Rypka" type="Sprite2D" parent="."]
+position = Vector2(2.499999, -2)
+scale = Vector2(1.0859375, 1.015625)
+texture = ExtResource("1_djykc")

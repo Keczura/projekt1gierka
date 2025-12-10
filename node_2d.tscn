@@ -1,13 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ch2o73dq1x5ci"]
+[gd_scene load_steps=3 format=3 uid="uid://ch2o73dq1x5ci"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="PackedScene" uid="uid://c6sjbpv8hg2g7" path="res://Player.tscn" id="2_q6r6c"]
-[ext_resource type="Script" uid="uid://igtr58webgiq" path="res://rybki.gd" id="3_0hol4"]
-[ext_resource type="Texture2D" uid="uid://dlx4d3oab7uwl" path="res://Assets/Textures/rypka.png" id="4_q6r6c"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q6r6c"]
-radius = 25.0
-height = 60.0
 
 [node name="Scena Gry" type="Node2D"]
 script = ExtResource("1_epypp")
@@ -15,16 +9,3 @@ script = ExtResource("1_epypp")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("2_q6r6c")]
-
-[node name="rybka" type="CharacterBody2D" parent="."]
-position = Vector2(-1, 1)
-script = ExtResource("3_0hol4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="rybka"]
-position = Vector2(300, 29)
-shape = SubResource("CapsuleShape2D_q6r6c")
-
-[node name="Sprite2D" type="Sprite2D" parent="rybka/CollisionShape2D"]
-position = Vector2(3, 1.5000005)
-scale = Vector2(1.046875, 1.0234375)
-texture = ExtResource("4_q6r6c")
