@@ -14,5 +14,4 @@ func _process(_delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var projectile_temp = projectile.instantiate()
-		projectile_temp.direction = -1
 		add_child(projectile_temp)
