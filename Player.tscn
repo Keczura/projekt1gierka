@@ -6,26 +6,34 @@
 [node name="Player" type="Node2D"]
 script = ExtResource("1_kpjcp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Pingu1" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Pingu1"]
 position = Vector2(81, 81)
 rotation = 0.7853982
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.4999999, 1.4999999)
 texture = ExtResource("2_kne1u")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Pingu2" type="Node2D" parent="."]
+
+[node name="Sprite2D2" type="Sprite2D" parent="Pingu2"]
 position = Vector2(-81, 81)
-rotation = -3.9269907
+rotation = 2.3561945
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_kne1u")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="Pingu3" type="Node2D" parent="."]
+
+[node name="Sprite2D3" type="Sprite2D" parent="Pingu3"]
 position = Vector2(81, -81)
 rotation = -0.7853982
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.4999999, 1.4999999)
 texture = ExtResource("2_kne1u")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="Pingu4" type="Node2D" parent="."]
+
+[node name="Sprite2D4" type="Sprite2D" parent="Pingu4"]
 position = Vector2(-81, -81)
 rotation = -2.3561945
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.4999999, 1.4999999)
 texture = ExtResource("2_kne1u")
