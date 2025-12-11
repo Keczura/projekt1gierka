@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://8eka862eceog" path="res://pingu1szczelanie.gd" id="3_kne1u"]
 
 [node name="Player" type="Node2D"]
-visibility_layer = 5
 
 [node name="Rotator" type="Node2D" parent="."]
 script = ExtResource("1_kpjcp")
@@ -13,7 +12,6 @@ script = ExtResource("1_kpjcp")
 [node name="Pingu4" type="Node2D" parent="Rotator"]
 
 [node name="Sprite2D4" type="Sprite2D" parent="Rotator/Pingu4"]
-z_index = 1
 position = Vector2(-81, -81)
 rotation = -2.3561945
 scale = Vector2(1.4999999, 1.4999999)
@@ -22,7 +20,6 @@ texture = ExtResource("2_kne1u")
 [node name="Pingu3" type="Node2D" parent="Rotator"]
 
 [node name="Sprite2D3" type="Sprite2D" parent="Rotator/Pingu3"]
-z_index = 1
 position = Vector2(81, -81)
 rotation = -0.7853982
 scale = Vector2(1.4999999, 1.4999999)
@@ -31,7 +28,6 @@ texture = ExtResource("2_kne1u")
 [node name="Pingu2" type="Node2D" parent="Rotator"]
 
 [node name="Sprite2D2" type="Sprite2D" parent="Rotator/Pingu2"]
-z_index = 1
 position = Vector2(-81, 81)
 rotation = 2.3561945
 scale = Vector2(1.5, 1.5)
@@ -40,16 +36,13 @@ texture = ExtResource("2_kne1u")
 [node name="Pingu1" type="Node2D" parent="Rotator"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Rotator/Pingu1"]
-z_index = 1
 position = Vector2(81, 81)
 rotation = 0.7853982
 scale = Vector2(1.4999999, 1.4999999)
 texture = ExtResource("2_kne1u")
 
-[node name="Celownik" type="Marker2D" parent="Rotator/Pingu1" node_paths=PackedStringArray("celownik")]
+[node name="Celownik" type="Marker2D" parent="Rotator/Pingu1"]
 position = Vector2(81, 81)
 rotation = 0.7853982
 scale = Vector2(1.4999999, 1.4999999)
-gizmo_extents = 0.0
 script = ExtResource("3_kne1u")
-celownik = NodePath(".")

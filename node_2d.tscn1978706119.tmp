@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ch2o73dq1x5ci"]
+[gd_scene load_steps=4 format=3 uid="uid://ch2o73dq1x5ci"]
 
 [ext_resource type="Script" uid="uid://dr4x5y8xdaxvf" path="res://node_2d.gd" id="1_epypp"]
 [ext_resource type="PackedScene" uid="uid://c6sjbpv8hg2g7" path="res://Player.tscn" id="2_q6r6c"]
+[ext_resource type="Script" uid="uid://cduu3k0vjqom7" path="res://player.gd" id="3_epypp"]
 
 [node name="Scena Gry" type="Node2D"]
 script = ExtResource("1_epypp")
@@ -9,5 +10,4 @@ script = ExtResource("1_epypp")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("2_q6r6c")]
-visibility_layer = 1
-z_index = 1
+script = ExtResource("3_epypp")
