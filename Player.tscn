@@ -47,7 +47,7 @@ scale = Vector2(1.4999999, 1.4999999)
 texture = ExtResource("2_kne1u")
 
 [node name="Celownik" type="Marker2D" parent="Rotator/Pingu1" node_paths=PackedStringArray("celownik")]
-position = Vector2(81, 81)
+position = Vector2(107, 109)
 rotation = 0.7853982
 scale = Vector2(1.4999999, 1.4999999)
 gizmo_extents = 0.0
