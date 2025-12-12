@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://co13cf6xubibu"]
+
+[ext_resource type="Texture2D" uid="uid://bd6kgcy5yb3kg" path="res://Assets/Textures/Wiewiorka.png" id="1_7k104"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7k104"]
+radius = 50.44464
+height = 165.80882
+
+[node name="Enemy" type="AnimatableBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.99999994, 16.999998)
+rotation = 1.3421582
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CapsuleShape2D_7k104")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("1_7k104")
